@@ -78,7 +78,7 @@ jobs:
         shell: bash
         # Secret name should be EXTRA_SECRETS_{function name} (if applicable)
         run: |
-          echo "extra_secrets_name=EXTRA_SECRETS_${{ matrix.function }}" >> $GITHUB_OUTPUT
+          echo "extra_secrets_name=EXTRA_SECRETS_EXECUTE_REST_EXTRACTOR" >> $GITHUB_OUTPUT
         id: extract_secrets
 
       - name: Deploy and schedule ${{matrix.function }}
